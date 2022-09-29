@@ -30,3 +30,13 @@
    
   </body>
 </html>
+<script>
+  function startTime() {
+    const now = Date();
+    let jam = now.getHours();
+    let menit = now.getMinutes();
+    let detik = now.getSeconds();
+    document.getElementById('clock').innerHTML = jam + ":" + menit + ":" + detik;
+    setTimeout(startTime, 1000);
+  }
+</script>
