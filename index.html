@@ -24,6 +24,7 @@
      color: black;
      font: calibri;
      font-size: 25px;
+     text-align: right;
     }
     </style>
   </head>
@@ -31,7 +32,9 @@
    <h1 class=h1> Reyhan Janstephen </h1>
    <marquee class=runtext> “Failures are made only by those who fail to dare, not by those who dare to fail.” </marquee>
    <h2 class=h2> Realtime Clock </h2> 
-   <div id="clock"> </div>
+   <div class=clock1> 
+      <div id="clock"> </div>
+   </div>
    
     <script>
      function startTime() {
@@ -39,6 +42,8 @@
        let jam = now.getHours();
        let menit = now.getMinutes();
        let detik = now.getSeconds();
+       menit = checkTime(menit);
+       detik = checkTime(detik);
        document.getElementById('clock').innerHTML = jam + ":" + menit + ":" + detik;
        setTimeout(startTime, 1000);
      }
