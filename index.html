@@ -39,4 +39,11 @@
     document.getElementById('clock').innerHTML = jam + ":" + menit + ":" + detik;
     setTimeout(startTime, 1000);
   }
+  
+  function checkTime(i){
+    if(i < 10){
+       "0" + i;
+    }
+    return i;
+  }
 </script>
