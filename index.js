@@ -13,3 +13,21 @@
      if(i < 10){i = "0" + i};
      return i;
    }
+
+   function dropdownfunction(){
+     document.getElementById('dropdown1').classList.toggle("show");
+
+   }
+  
+   window.onclick = function(event) {
+    if(!event.target.matches('.1')){
+       var dropdowns = document.getElementByClassName("dropdown-content");
+       var i;
+       for(i = 0; i < dropdowns.length; i++){
+        var opendropdown = dropdowns[i];
+         if(opendropdown.classList.contains('show')){
+            opendropdown.classList.remove('show');
+         }
+       }
+    }
+   }
