@@ -1,6 +1,3 @@
- var music1 = document.getElementById("music1");
- var music2 = document.getElementById("music2");
- var audio = document.querySelectorAll('audio');
    function startTime() {
      const now = new Date();
      let jam = now.getHours();
@@ -23,6 +20,8 @@
    }
 
    function stopallaudio(){
+    var music1 = document.getElementById("music1");
+    var music2 = document.getElementById("music2");
      if(music1 !== null){
         music1.pause();
         music1.currentTime = 0;
@@ -34,11 +33,13 @@
    }
    function playmusic1(){
      stopallaudio();
+     var music1 = document.getElementById("music1");
      music1.loop = true;
      music1.play();
    }
    function playmusic2(){
      stopallaudio();
+     var music2 = document.getElementById("music2");
      music2.loop = true;
      music2.play();
    }
