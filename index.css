@@ -1,3 +1,6 @@
+  .body{
+   background-image: url('Background.jpeg');
+  }
   .h1{
    color: black;
    font: arial;
