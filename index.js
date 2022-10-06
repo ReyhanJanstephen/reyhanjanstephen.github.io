@@ -20,6 +20,7 @@
 
    }
    function playmusic1(){
+     music1.loop = true;
      music1.play();
    }
   
