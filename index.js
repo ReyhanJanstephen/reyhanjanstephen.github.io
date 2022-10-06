@@ -19,6 +19,9 @@
      document.getElementById('dropdown1').classList.toggle("show");
 
    }
+   function playmusic1(){
+     music1.play();
+   }
   
    window.onclick = function(event) {
     if(!event.target.matches('.dropbutton')){
