@@ -1,3 +1,4 @@
+ var music1 = new Audio('fortnitechillmusic.m4a');
    function startTime() {
      const now = new Date();
      let jam = now.getHours();
