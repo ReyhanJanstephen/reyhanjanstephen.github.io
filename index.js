@@ -1,6 +1,6 @@
  var music1 = new Audio('ToBeContinuedFortnite.m4a');
  var music2 = new Audio('OneDirection.mp3');
- var audio = document.querySelectorAll('Audio');
+ var audio = document.querySelectorAll('audio');
    function startTime() {
      const now = new Date();
      let jam = now.getHours();
