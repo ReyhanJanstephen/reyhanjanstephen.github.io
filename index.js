@@ -23,10 +23,10 @@
    }
 
    function stopallaudio(){
-     audio.forEach(function(audio){
-       audio.pause();
-       audio.currentTime = 0;
-     });
+     music1.pause();
+     music1.currentTime = 0;
+     music2.pause();
+     music2.currentTime = 0;
    }
    function playmusic1(){
      stopallaudio();
