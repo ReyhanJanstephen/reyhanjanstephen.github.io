@@ -23,10 +23,14 @@
    }
 
    function stopallaudio(){
-     music1.pause();
-     music1.currentTime = 0;
-     music2.pause();
-     music2.currentTime = 0;
+     if(music1 !== null){
+        music1.pause();
+        music1.currentTime = 0;
+     }
+     if(music2 !== null){
+        music2.pause();
+        music2.currentTime = 0;
+     }
    }
    function playmusic1(){
      stopallaudio();
