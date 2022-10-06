@@ -1,4 +1,5 @@
- var music1 = new Audio('fortnitechillmusic.m4a');
+ var music1 = new Audio('ToBeContinuedFortnite.m4a');
+ var music2 = new Audio('OneDirection.mp3');
    function startTime() {
      const now = new Date();
      let jam = now.getHours();
@@ -22,6 +23,10 @@
    function playmusic1(){
      music1.loop = true;
      music1.play();
+   }
+   function playmusic2(){
+     music2.loop = true;
+     music2.play();
    }
   
    window.onclick = function(event) {
