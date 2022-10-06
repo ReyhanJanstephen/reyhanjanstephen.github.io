@@ -1,5 +1,5 @@
- var music1 = new Audio('ToBeContinuedFortnite.m4a');
- var music2 = new Audio('OneDirection.mp3');
+ var music1 = document.getElementById("music1");
+ var music2 = document.getElementById("music2");
  var audio = document.querySelectorAll('audio');
    function startTime() {
      const now = new Date();
