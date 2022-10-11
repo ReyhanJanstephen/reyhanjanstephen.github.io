@@ -1,42 +1,69 @@
-  .body{
-   background-image: url("Background.jpeg");
+  body{
+   background-image: url("Background.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 3000px;
+   
   }
-  .h1{
-   color: black;
-   font: arial;
+  .name{
+   color: white;
+   font-family: Century Gothic;
    font-size: 40px;
    text-align: center;
+   background-color: rgba(22, 20, 20, 0.5);
+   padding: 10px;
+   position: center;
+   margin-left: 440px;
+   margin-right: 440px;
+   width: 10rem 10px 20px;
+   background-position: center;
   }
   .runtext{
-   color: gray;
+   color: black;
    font: arial;
    font-size: 24px;
    font-style: italic;
+   opacity: .6;
+   background-color: aqua;
   }
   .h2{
    color: black;
    font: arial;
    font-size: 30px;
-   text-align: right;
+   text-align: left;
   }
   .clock1{
-   color: black;
-   font: calibri;
-   font-size: 25px;
-   text-align: right;
+   color: white;
+   font-family:impact;
+   font-size: 40px;
+   text-align: center;
   }
   .clocktext{
    margin: 0;
    padding: 0;
+   font-family: sans-serif;
+   background-color: #4ae850;
+   width: 10rem 10px 20px;
+   margin-left: 1100px;
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 25px;
+   color: white;
+   position: right;
+  }
+  .nothing{
+   opacity: 0;
   }
   .dropbutton{
-   background-color: #3D9DBA;
+   background-color: gray;
    color: white;
    font-size: 32px;
-   font: arial;
+   font-family: georgia, serif;
+   border-color:rgba(0, 0, 0, 0);
+   box-shadow: #12121f;
   }
   .dropbutton:hover, .dropbutton:focus{
-   background-color: #2980B9;
+   background-color: #2b84be;
   }
   .dropdown{
    position: relative;
@@ -45,7 +72,7 @@
   .dropdown-content{
    display: none;
    position: absolute;
-   background-color: #f1f1f1;
+   background-color: rgba(241, 241, 241, 0.6);
   }
   .dropdown-content a{
    color: black;
@@ -58,4 +85,98 @@
   }
   .show{
    display: block;
+  }
+  .allcalendar{
+    text-align: right;
+  }
+  .calendar{
+    width: 30rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    font-family: sans-serif;
+  }
+  .container{
+    width: 36%;
+    height: 54%;
+    background-color: #12121f;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+  }
+  .month{
+    width: 99%;
+    height: 12rem;
+    background-color: #f52905;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem;
+    text-align: center;
+  }
+  .month i{
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.1rem;
+    font-family: fantasy;
+  }
+  .month p{
+    font-size: 1.6rem;
+    font-family: Geneva;
+  }
+  .weekdays{
+    width: 100%;
+    height: 15%;
+    padding: 0.0.4rem;
+    display: flex;
+    align-items: center;
+  }
+  .weekdays div{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    word-spacing: 60px;
+    border-spacing: 100rem;
+    width: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  .days{
+    width: 95%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+  }
+  .days div{
+    font-size: 0.8rem;
+    margin: 0.0001rem;
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+  }
+  .days div:hover:not(.today){
+    background-color: #262626;
+    border: .2rem solid #777;
+    cursor: pointer;
+  }
+  .prev-date,
+  .next-date{
+     opacity: .5;
+  }
+  .today{
+    background-color: #2980B9;
   }
