@@ -1,3 +1,6 @@
+WebView browser = (WebView) findViewById(R.id.webview);
+browser.getSettings().setLoadWithOverviewMode(true);
+browser.getSettings().setUseWideViewPort(true);
    function startTime() {
      const now = new Date();
      let jam = now.getHours();
