@@ -103,7 +103,7 @@
     color: #eee;
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: center;
   }
   .month{
     width: 99%;
